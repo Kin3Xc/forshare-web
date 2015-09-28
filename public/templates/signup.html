@@ -1,0 +1,73 @@
+<!-- header -->
+<div ng-include="'templates/header.html'"></div>
+
+<div class="page_container signup">
+	
+	<div class="container signup">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="col-lg-12 text-center">
+	                <h2 class="section-heading">Create Account</h2>
+	                <h4 class="section-subheading text-muted contac">Registro de usuarios.</h4>
+	            </div>			
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-12">
+				<form ng-submit="signup.signup()" class="validate" novalidate>
+					<div class="col-md-6 col-md-offset-3">
+						<div class="form-group">
+							<label for="">Nombre</label>
+							<input ng-model="signup.user.name" type="text" class="form-control" placeholder="Nombre y apellido" name="nombre">
+						</div>
+					</div>
+
+					<div class="col-md-6 col-md-offset-3">
+						<div class="form-group">
+							<label for="">Email</label>
+							<input ng-model="signup.user.email" type="email" class="form-control" placeholder="Email" name="email">
+						</div>
+					</div>
+
+					<div class="col-md-6 col-md-offset-3">
+						<div class="form-group">
+							<label for="">Username</label>
+							<input ng-model="signup.user.username" type="text" class="form-control" placeholder="Username" name="username">
+						</div>
+					</div>
+
+					<div class="col-md-6 col-md-offset-3">
+						<div class="form-group">
+							<label for="">Password</label>
+							<input type="password" class="form-control" placeholder="Password">
+						</div>
+					</div>
+
+					<div class="col-md-6 col-md-offset-3">
+						<div class="form-group">
+							<label for="">Repeat password</label>
+							<input ng-model="signup.user.password" type="password" class="form-control" placeholder="Repetir password">
+						</div>
+					</div>
+					<div class="col-md-6 col-md-offset-3">
+					<div class="clearfix"></div>
+						<div class="form-group">
+							<div id="success"></div>
+	                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							<div style="position: absolute; left: -5000px;"><input type="text" name="b_3ab01c04621448c868bd23c40_6aad136474" tabindex="-1" value=""></div>
+	                        <button type="submit" class="btn btn-lg">Create account</button>
+	                        <a style="float: right; margin-top: 10px; font-size: 1.2em;" ui-sref="login">Ya tengo una cuenta</a>
+						</div>
+					</div>
+
+					
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- footer -->
+<div class="footer" ng-include="'templates/footer.html'"></div>

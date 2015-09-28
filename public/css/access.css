@@ -1,0 +1,16 @@
+ @font-face{
+    font-family: 'Aileron-UltraLight';
+    src: url('../fonts/Aileron-UltraLight.otf');
+ }
+
+.page_container{
+	font-family: 'Aileron-UltraLight';
+}
+
+.login{
+	margin-top: 160px;
+}
+
+.signup{
+	margin-top: 120px;
+}

@@ -19,16 +19,18 @@ exports.signup = function(req, res){
 	var user = new User({
 		name: req.body.name,
 		email: req.body.email,
-		phone: req.body.phone,
-		adress: req.body.adress,
-		user: req.body.user,
+		username: req.body.username,
 		password: req.body.password
 	});
 
+	console.log(user);
+
 	// guardo el usuario
 	user.save(function(err){
+		console.log(err);
 		if (err) {return res.send({message: 'Error al almacenar los datos de l empresa'}) }//Si hubo error
 
+		console.log(user);
 		return res // si todo esta bien
 			.status(200)
 			.send({user: user, token: service.createToken(user)});

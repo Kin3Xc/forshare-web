@@ -8,9 +8,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-
 // USERS
-router.post('/signup', user.signup);
-router.post('/login', user.login);
+router.post('/users/signup', user.signup);
+router.post('/users/login', user.login);
+
 
 module.exports = router;
