@@ -1,0 +1,46 @@
+/*div#menu{
+	position: absolute;
+	width: 180px;
+	height: 100%;
+	background-color: #ecf0f1;
+}
+*/
+.panel-producto .img-producto{
+	text-align: center;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.panel-producto .description{
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.panel-producto .img-producto img{
+	width: 180px;
+	height: 220px;
+	border-radius: 10px;
+}
+
+.description .pedir{
+	float: right;
+}
+
+.valor{
+	margin-top: 10px;
+	text-align: center;
+	font-size: 1.8em;
+}
+
+.user{
+	/*float: right;*/
+	text-align: center;
+}
+
+.user .user-avatar img{
+	width: 120px;
+	border-radius: 50%;
+}
+.user .bio p{
+	font-size: 2em;
+}
+
